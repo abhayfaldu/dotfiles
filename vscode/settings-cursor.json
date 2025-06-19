@@ -1,10 +1,93 @@
 {
+  // editor 
+  "editor.multiCursorModifier": "alt",
+  "editor.fontSize": 14,
+  "editor.mouseWheelZoom": true,
+  "editor.cursorSurroundingLines": 4,
+  "editor.accessibilitySupport": "off",
+  "editor.stickyScroll.maxLineCount": 1,
+  "editor.stickyScroll.scrollWithEditor": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.scrollbar.horizontalScrollbarSize": 8,
+  "editor.scrollbar.verticalScrollbarSize": 10,
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.lineHeight": 2.0,
+  "editor.wordWrap": "off",
+  "editor.largeFileOptimizations": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "\"Fira Code\",\"monospace\"",
+  "editor.fontLigatures": true,
+  "editor.stickyTabStops": true,
+  "editor.linkedEditing": true,
+  "editor.tabCompletion": "on",
+  "editor.minimap.sectionHeaderFontSize": 8,
+  "editor.minimap.size": "fill",
+  "editor.minimap.enabled": true,
+  "editor.inlineSuggest.edits.showCollapsed": true,
+  "editor.rename.enablePreview": false,
+  "editor.suggestSelection": "first",
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [120],
   "editor.formatOnType": false,
   "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
-  "scm.showHistoryGraph": false,
-  "update.mode": "manual",
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tokenColorCustomizations": {
+    "comments": "#cfcfcf8c",
+    "textMateRules": [
+      {
+        "scope": "punctuation.accessor",
+        "settings": {
+          "foreground": "#d7d7d7" // Change to any color you like
+        }
+      },
+      {
+        "scope": "punctuation.terminator",
+        "settings": {
+          "foreground": "#d7d7d7" // Change for semicolons
+        }
+      },
+      {
+        "scope": "punctuation.separator",
+        "settings": {
+          "foreground": "#d7d7d7" // Change for commas, colons, etc.
+        }
+      },
+      {
+        "scope": "keyword.operator",
+        "settings": {
+          "foreground": "#d7d7d7" // Change for operators like : and ...
+        }
+      }
+    ]
+  },
+
+  // cursor
+  "cursor.terminal.usePreviewBox": true,
+  "cursor.cmdk.useThemedDiffBackground": true,
+  "cursor.cpp.enablePartialAccepts": true,
+  "cursor.diffs.useCharacterLevelDiffs": true,
+
+  // terminal
+  "terminal.integrated.stickyScroll.maxLineCount": 1,
+  "terminal.integrated.env.osx": {},
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.lineHeight": 1.3,
+  "terminal.integrated.mouseWheelZoom": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "auto",
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.shellIntegration.enabled": true,
+
+  // extensions
   "extensions.autoUpdate": true,
+  "extensions.ignoreRecommendations": false,
+
+  // cSpell
   "cSpell.ignoreWords": [
     "MPID",
     "mpid",
@@ -30,37 +113,107 @@
     "faldu",
     "abhayfaldu"
   ],
-  "editor.renderWhitespace": "all",
-  "editor.rulers": [120],
+  "cSpell.userWords": [
+    "aadhar",
+    "Apiservice",
+    "axios",
+    "builtup",
+    "composables",
+    "containerw",
+    "Datatable",
+    "drei",
+    "duotune",
+    "ecommerce",
+    "Encryptor",
+    "foir",
+    "gstin",
+    "GSTR",
+    "healthcheck",
+    "hset",
+    "ifsc",
+    "itemgroups",
+    "japa",
+    "klass",
+    "luxon",
+    "Navv",
+    "Pantasign",
+    "Phonepe",
+    "pincode",
+    "pino",
+    "Presign",
+    "Pulumi",
+    "RDBMS",
+    "Rocketseat",
+    "snakecase",
+    "sublocation",
+    "Swal",
+    "sweetalert",
+    "tailwindcss",
+    "toastification",
+    "upgradation",
+    "Verasys",
+    "VITE",
+    "vueform",
+    "vuex",
+    "webledger",
+    "Wooffer",
+    "WORKBOARD",
+    "Wortal"
+  ],
+
+  // search
   "search.useIgnoreFiles": false,
   "search.quickOpen.includeSymbols": false,
   "search.exclude": {
     "**/node_modules": false,
     "**/bower_components": true
   },
+
+  // workbench
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "explorer.confirmDragAndDrop": false,
-  "extensions.ignoreRecommendations": false,
-  "explorer.confirmDelete": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.iconTheme": "material-icon-theme",
-  "breadcrumbs.enabled": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.donotVerifyTags": true,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "javascript.suggest.autoImports": false,
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "update.showReleaseNotes": false,
-  "git.fetchOnPull": true,
-  "diffEditor.ignoreTrimWhitespace": true,
-  "editor.insertSpaces": true,
-  "editor.detectIndentation": true,
-  "html.format.indentHandlebars": true,
-  "html.format.indentInnerHtml": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.glb": "default"
+  },
+  "workbench.tree.renderIndentGuides": "onHover",
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.stickyScrollMaxItemCount": 1,
+  "workbench.editor.tabActionLocation": "left",
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.colorTheme": "Bearded Theme Arc EolStorm",
+
+  // explorer
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+
+  // files
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": true,
+  "files.autoSaveDelay": 1500,
   "files.associations": {
     "*.edge": "edge"
   },
+
+  // update
+  "update.mode": "manual",
+  "update.showReleaseNotes": false,
+
+  // live server
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+
+  // diff editor
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.experimental.showMoves": true,
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.maxComputationTime": 1000,
+  "diffEditor.wordWrap": "off",
+
+  // todohighlight
+  "todohighlight.isEnable": true,
   "todohighlight.keywords": [
     {
       "text": "DEBUG:",
@@ -122,37 +275,8 @@
       "backgroundColor": "purple"
     }
   ],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[python]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.wordWrap": "off",
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
-  },
+
+  // languages
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -162,83 +286,71 @@
   "[edge]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.stickyTabStops": true,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb",
-    "*.glb": "default"
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
   },
-  "terminal.integrated.tabs.enabled": true,
-  "explorer.compactFolders": false,
-  "git.confirmSync": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "cSpell.userWords": [
-    "aadhar",
-    "Apiservice",
-    "axios",
-    "builtup",
-    "composables",
-    "containerw",
-    "Datatable",
-    "drei",
-    "duotune",
-    "ecommerce",
-    "Encryptor",
-    "foir",
-    "gstin",
-    "GSTR",
-    "healthcheck",
-    "hset",
-    "ifsc",
-    "itemgroups",
-    "japa",
-    "klass",
-    "luxon",
-    "Navv",
-    "Pantasign",
-    "Phonepe",
-    "pincode",
-    "pino",
-    "Presign",
-    "Pulumi",
-    "RDBMS",
-    "Rocketseat",
-    "snakecase",
-    "sublocation",
-    "Swal",
-    "sweetalert",
-    "tailwindcss",
-    "toastification",
-    "upgradation",
-    "Verasys",
-    "VITE",
-    "vueform",
-    "vuex",
-    "webledger",
-    "WORKBOARD",
-    "Wortal"
-  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // svg
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "svg.preview.mode": "svg",
+
+  // javascript
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.suggest.autoImports": false,
+
+  // typescript
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.enableMultiLinePasteWarning": "auto",
-  "editor.fontFamily": "\"Fira Code\",\"monospace\"",
-  "editor.fontLigatures": true,
-  "terminal.integrated.shellIntegration.enabled": true,
-  "aws.suppressPrompts": {
-    "codeWhispererNewWelcomeMessage": true
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "diffEditor.wordWrap": "off",
-  "editor.wordWrap": "off",
-  "editor.largeFileOptimizations": false,
-  "editor.inlineSuggest.enabled": true,
-  "editor.guides.bracketPairs": true,
-  "editor.tabSize": 2,
+
+  // html
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+
+  // markdown
+  "[markdown]": {
+    "editor.wordWrap": "off",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "markdown.validate.unusedLinkDefinitions.enabled": "warning",
+
+  // vue
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "vue.server.hybridMode": true,
+  "vue.autoInsert.dotValue": true,
+
+  // prettier
   "prettier.jsxSingleQuote": true,
-  "prettier.singleQuote": true,
+  "prettier.singleQuote": false,
   "prettier.semi": false,
   "prettier.useEditorConfig": false,
   "prettier.printWidth": 150,
   "prettier.tabWidth": 2,
   "prettier.trailingComma": "all",
-  "redhat.telemetry.enabled": true,
+
+  // yaml
   "yaml.customTags": [
     "!And",
     "!And sequence",
@@ -268,15 +380,21 @@
     "!Split",
     "!Split sequence"
   ],
-  "editor.multiCursorModifier": "alt",
+
+  // git
   "git.enableSmartCommit": true,
-  "editor.fontSize": 13,
+  "git.confirmSync": false,
+  "git.fetchOnPull": true,
+
+  // vim
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.textColor": "rgb(0,0,0)",
-  "editor.mouseWheelZoom": true,
-  "terminal.integrated.mouseWheelZoom": true,
   "vim.smartRelativeLine": true,
-  "editor.cursorSurroundingLines": 8,
+  "vim.neovimPath": "/Users/mac/.config/nvim",
+  "vim.enableNeovim": true,
+  "vim.useSystemClipboard": true,
+
+  // accessibility
   "accessibility.signals.chatRequestSent": {
     "sound": "off",
     "announcement": "off"
@@ -340,38 +458,24 @@
   "accessibility.signals.diffLineDeleted": {
     "sound": "off"
   },
-  "todohighlight.isEnable": true,
-  "files.autoSaveDelay": 1000,
+  "accessibility.signals.lineHasError": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasInlineSuggestion": {
+    "sound": "off"
+  },
+
+  // error lens
   "errorLens.delay": 500,
-  "diffEditor.maxComputationTime": 1000,
-  "splitHTMLAttributes.sortOrder": [
-    "as",
-    "^v-if",
-    "^v-else",
-    "^v-show",
-    "^v-for",
-    "^key",
-    "^:key",
-    "^v-model",
-    "^v-",
-    "^:",
-    "^@click",
-    "^@",
-    "^id",
-    "^:id",
-    "^class",
-    "^:class",
-    "^.*=\""
-  ],
-  "material-icon-theme.hidesExplorerArrows": true,
-  "workbench.tree.renderIndentGuides": "onHover",
-  "editor.scrollbar.horizontalScrollbarSize": 8,
-  "editor.scrollbar.verticalScrollbarSize": 8,
-  "editor.cursorSmoothCaretAnimation": "off",
-  "editor.lineHeight": 2.0,
-  "files.insertFinalNewline": true,
-  "terminal.integrated.lineHeight": 1.3,
-  "editor.minimap.renderCharacters": false,
+  "errorLens.enabled": false,
+
+  // git lens
+  "gitlens.views.repositories.showIncomingActivity": true,
+  "gitlens.ai.generateCommitMessage.customInstructions": "keep the commit message consize",
+  "gitlens.views.workspaces.showIncomingActivity": true,
+
+  // debug
+  "debug.console.closeOnEnd": true,
   "launch": {
     "version": "0.2.0",
     "configurations": [
@@ -531,55 +635,39 @@
       }
     ]
   },
-  "vim.useSystemClipboard": true,
-  "terminal.integrated.env.osx": {},
-  "console-ninja.featureSet": "Community",
-  "debug.console.closeOnEnd": true,
-  "editor.accessibilitySupport": "off",
-  "editor.stickyScroll.maxLineCount": 1,
-  "editor.stickyScroll.scrollWithEditor": false,
-  "workbench.tree.enableStickyScroll": false,
-  "workbench.tree.stickyScrollMaxItemCount": 1,
-  "terminal.integrated.stickyScroll.maxLineCount": 1,
-  "diffEditor.renderSideBySide": true,
-  "workbench.editor.tabActionLocation": "left",
-  "[svg]": {
-    "editor.defaultFormatter": "jock.svg"
-  },
-  "workbench.sideBar.location": "left",
-  "vim.enableNeovim": true,
-  "supermaven.enable": {
+
+  // autoimport
+  "autoimport.doubleQuotes": true,
+  "autoimport.filesToScan": "**/*.{ts,tsx,vue}",
+  "autoimport.showNotifications": true,
+  "autoimport.useSemiColon": false,
+
+  // github
+  "github.copilot.selectedCompletionModel": "GPT-4.1",
+  "github.copilot.chat.languageContext.typescript.enabled": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.nextEditSuggestions.fixes": true,
+  "github.copilot.enable": {
     "*": false
   },
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
+
+  "breadcrumbs.enabled": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "better-comments.highlightPlainText": true,
+  "emmet.useInlineCompletions": true,
+  "augment.nextEdit.highlightSuggestionsInTheEditor": true,
+  "window.commandCenter": true,
+  "material-icon-theme.hidesExplorerArrows": true,
+  "scm.showHistoryGraph": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "aws.suppressPrompts": {
+    "codeWhispererNewWelcomeMessage": true
   },
-  "diffEditor.experimental.showMoves": true,
-  "workbench.editor.enablePreview": false,
-  "accessibility.signals.lineHasError": {
-    "sound": "off"
-  },
-  "accessibility.signals.lineHasInlineSuggestion": {
-    "sound": "off"
-  },
+  "redhat.telemetry.enabled": true,
+  "console-ninja.featureSet": "Community",
   "vscode_custom_css.imports": ["file:///Users/abhayfaldu/Developer/vscode-custom-css/custom.css"],
-  "editor.linkedEditing": true,
-  "editor.tabCompletion": "on",
-  "cursor.cpp.enablePartialAccepts": true,
   "database-client.autoSync": true,
-  "gitlens.views.repositories.showIncomingActivity": true,
-  "gitlens.views.workspaces.showIncomingActivity": true,
   "codesnap.backgroundColor": "#8A939B",
-  "svg.preview.mode": "svg",
-  "gitlens.ai.generateCommitMessage.customInstructions": "keep the commit message consize",
-  "errorLens.enabled": false,
-  "workbench.activityBar.orientation": "vertical",
-  "editor.minimap.sectionHeaderFontSize": 8,
-  "editor.minimap.size": "fill",
-  "cursor.cmdk.useThemedDiffBackground": true,
-  "terminal.integrated.fontSize": 12,
-  "workbench.colorTheme": "Bearded Theme Coffee",
-  "cursor.diffs.useCharacterLevelDiffs": true,
   "bootstrapIntelliSense": {
     "enable": true,
     "bsVersion": "5.2.1",
@@ -587,55 +675,4 @@
     "cssFilePath": "",
     "languageSupport": []
   },
-  "vue.autoInsert.dotValue": true,
-  "editor.minimap.enabled": true,
-  "cursor.terminal.usePreviewBox": true,
-  "vue.server.hybridMode": true,
-  "window.commandCenter": true,
-  "workbench.colorCustomizations": {
-  },
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-  //     {
-  //       "scope": "punctuation.accessor",
-  //       "settings": {
-  //         "foreground": "#d7d7d7" // Change to any color you like
-  //       }
-  //     },
-  //     {
-  //       "scope": "punctuation.terminator",
-  //       "settings": {
-  //         "foreground": "#d7d7d7" // Change for semicolons
-  //       }
-  //     },
-  //     {
-  //       "scope": "punctuation.separator",
-  //       "settings": {
-  //         "foreground": "#d7d7d7" // Change for commas, colons, etc.
-  //       }
-  //     },
-  //     {
-  //       "scope": "keyword.operator",
-  //       "settings": {
-  //         "foreground": "#d7d7d7" // Change for operators like : and ...
-  //       }
-  //     },
-      {
-        "scope": [
-          "comment",
-          "punctuation.definition.comment" // <<< this line is important
-        ],
-        "settings": {
-          "foreground": "#ffffff77", // nice green (you can pick your own color)
-          "fontStyle": "italic"
-        }
-      }
-    ]
-  },
-  "errorLens.enabledDiagnosticLevels": [
-    "warning",
-    "info",
-    "error"
-  ],
-  "files.autoSave": "afterDelay",
 }
